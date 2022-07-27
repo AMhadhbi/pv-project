@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="mrp_services.iuv_xms_mrp_production" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <page name="components" position="after">
+          <page name="services" string="Services">
+            <field name="x_services_added" invisible="1"/>
+            <field name="x_total_extra_cost" invisible="1"/>
+            <field name="x_service_product_ids" attrs="{'readonly': [('state','in',['done','cancel'])]}">
+              <tree editable="bottom">
+                <field name="x_product_id" domain="[('type','=','service')] context="{'default_type':'service'}""/>
+                <field name="x_name"/>
+                <field name="x_to_consume" attrs="{'readonly':['|',('x_quantity','!=',0.0),('parent.state','in',['progress','to_close','done','cancel'])]}"/>
+                <field name="x_quantity" attrs="{'column_invisible': [('parent.state','in',['draft'])], 'readonly':[('parent.state','not in',['confirmed','progress'])]}"/>
+                <field name="x_uom"/>
+                <field name="x_burden" invisible="1"/>
+              </tree>
+            </field>
+          </page>
+        </page>
+        <button name="%(mrp_account_enterprise.action_cost_struct_mrp_production)d" position="attributes">
+          <attribute name="invisible">1</attribute>
+        </button>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+    <field name="key" eval="False"/>
+    <field name="mode">extension</field>
+    <field name="model">mrp.production</field>
+    <field name="name">custom_ray_odoo mfg services</field>
+    <field name="priority">16</field>
+    <field name="type">form</field>
+  </record>
+</odoo>

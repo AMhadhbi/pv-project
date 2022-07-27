@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="mrp_services.ir_model_x_mrp_services" model="ir.model" context="{'studio': True}">
+    <field name="model">x_mrp_services</field>
+    <field name="name">Manufacturing Services</field>
+  </record>
+</odoo>

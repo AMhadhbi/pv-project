@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="mrp_services.imf_xms_x_services_name" model="ir.model.fields" context="{'studio': True}">
+    <field name="copied" eval="False"/>
+    <field name="field_description">Description</field>
+    <field name="model">x_mrp_services</field>
+    <field name="model_id" ref="mrp_services.ir_model_x_mrp_services"/>
+    <field name="name">x_name</field>
+    <field name="ttype">char</field>
+  </record>
+  <record id="mrp_services.imf_xms_x_product_id" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="False"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Product</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_mrp_services</field>
+    <field name="model_id" ref="mrp_services.ir_model_x_mrp_services"/>
+    <field name="name">x_product_id</field>
+    <field name="on_delete">set null</field>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation">product.product</field>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">many2one</field>
+  </record>
+  <record id="mrp_services.imf_xms_x_quantity" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="False"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Consumed</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_mrp_services</field>
+    <field name="model_id" ref="mrp_services.ir_model_x_mrp_services"/>
+    <field name="name">x_quantity</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">float</field>
+  </record>
+  <record id="mrp_services.imf_xms_x_uom" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="False"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Unit of Measure</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[Default unit of measure used for all stock operations.]]></field>
+    <field name="index" eval="False"/>
+    <field name="model">x_mrp_services</field>
+    <field name="model_id" ref="mrp_services.ir_model_x_mrp_services"/>
+    <field name="name">x_uom</field>
+    <field name="on_delete">set null</field>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation">uom.uom</field>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">many2one</field>
+  </record>
+  <record id="mrp_services.imf_xms_x_mrp_id" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="False"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Manufacturing Order</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_mrp_services</field>
+    <field name="model_id" ref="mrp_services.ir_model_x_mrp_services"/>
+    <field name="name">x_mrp_id</field>
+    <field name="on_delete">set null</field>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation">mrp.production</field>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">many2one</field>
+  </record>
+  <record id="mrp_services.imf_xms_x_service_product_ids" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="False"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Services</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">mrp.production</field>
+    <field name="model_id" ref="mrp.model_mrp_production"/>
+    <field name="name">x_service_product_ids</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation">x_mrp_services</field>
+    <field name="relation_field">x_mrp_id</field>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">one2many</field>
+  </record>
+  <record id="mrp_services.imf_xms_x_cost" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="False"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">Unit Cost</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_mrp_services</field>
+    <field name="model_id" ref="mrp_services.ir_model_x_mrp_services"/>
+    <field name="name">x_cost</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">float</field>
+  </record>
+  <record id="mrp_services.imf_xms_x_burden" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute">
+for record in self:
+  if not record.x_uom:
+    record['x_uom'] = record.x_product_id.uom_id.id
+  record['x_cost'] = record.x_product_id.standard_price    
+  record['x_burden'] = record.x_cost * record.x_quantity
+	</field>
+    <field name="copied" eval="False"/>
+    <field name="depends">x_product_id, x_quantity</field>
+    <field name="domain">[]</field>
+    <field name="field_description">Cost to Add</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_mrp_services</field>
+    <field name="model_id" ref="mrp_services.ir_model_x_mrp_services"/>
+    <field name="name">x_burden</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="True"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="False"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="False"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">float</field>
+  </record>
+  <record id="mrp_services.imf_xms_x_total_extra_cost" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute">
+for record in self:
+  record['x_total_extra_cost'] = sum(record.x_service_product_ids.mapped('x_burden'))
+  record['extra_cost'] = record.x_total_extra_cost / record.product_qty
+	</field>
+    <field name="copied" eval="False"/>
+    <field name="depends">x_service_product_ids,product_qty</field>
+    <field name="domain">[]</field>
+    <field name="field_description">Extra Cost Total</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">mrp.production</field>
+    <field name="model_id" ref="mrp.model_mrp_production"/>
+    <field name="name">x_total_extra_cost</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="True"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="False"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="False"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">float</field>
+  </record>
+  <record id="mrp_services.imf_xms_x_to_consume" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute" eval="False"/>
+    <field name="copied" eval="False"/>
+    <field name="depends" eval="False"/>
+    <field name="domain">[]</field>
+    <field name="field_description">To Consume</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">x_mrp_services</field>
+    <field name="model_id" ref="mrp_services.ir_model_x_mrp_services"/>
+    <field name="name">x_to_consume</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="False"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">float</field>
+  </record>
+  <record id="mrp_services.imf_xms_x_services_added" model="ir.model.fields" context="{'studio': True}">
+    <field name="complete_name" eval="False"/>
+    <field name="compute">
+for record in self:
+  if record.product_id and not record.x_service_product_ids:
+    record['x_services_added'] = True
+    record['x_service_product_ids'] = [(0,0, {
+      'x_product_id': bom_line.product_id.id,
+      'x_to_consume': bom_line.product_qty,
+      'x_uom': bom_line.product_uom_id.id,
+	  'x_cost': bom_line.product_id.standard_price,
+    }) for bom_line in record.bom_id.bom_line_ids.search([('product_id.type','=','service')])] 
+  else:
+    record['x_services_added'] = False
+    </field>
+    <field name="copied" eval="False"/>
+    <field name="depends">product_id</field>
+    <field name="domain">[]</field>
+    <field name="field_description">Services Added</field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="index" eval="False"/>
+    <field name="model">mrp.production</field>
+    <field name="model_id" ref="mrp.model_mrp_production"/>
+    <field name="name">x_services_added</field>
+    <field name="on_delete" eval="False"/>
+    <field name="readonly" eval="True"/>
+    <field name="related" eval="False"/>
+    <field name="relation" eval="False"/>
+    <field name="relation_field" eval="False"/>
+    <field name="relation_table" eval="False"/>
+    <field name="required" eval="False"/>
+    <field name="selectable" eval="True"/>
+    <field name="selection" eval="False"/>
+    <field name="size" eval="False"/>
+    <field name="state">manual</field>
+    <field name="store" eval="True"/>
+    <field name="tracking" eval="False"/>
+    <field name="translate" eval="False"/>
+    <field name="ttype">boolean</field>
+  </record>
+</odoo>
